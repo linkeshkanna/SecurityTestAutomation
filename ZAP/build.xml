@@ -1,0 +1,129 @@
+<project name = "ZAP" basedir="." default="run">
+	
+	<property name="targetHost" value="http://localhost:8080/bodgeit/" />
+	<property name="targetApp" value="${targetHost}zap-wave/" />
+	<property name="bin" value="bin" />
+	<property name="build" value="build" />
+	<property name="src" value="." />
+	<property name="lib" value="lib" />	
+    <property file="local.properties"/>
+	<property name="zapaddr" value="localhost" />
+	<property name="zapport" value="8090" />
+	<property name="zapjar" value="${lib}/zap-api-v2-8.jar" />	
+	
+    <taskdef name="AccessURL" classname="org.zaproxy.clientapi.ant.AccessUrlTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="ActiveScanURL" classname="org.zaproxy.clientapi.ant.ActiveScanUrlTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="ActiveScanSite" classname="org.zaproxy.clientapi.ant.ActiveScanSubtreeTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="VulnerabilityAssessment" classname="org.zaproxy.clientapi.ant.AlertCheckTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="loadSessionTask" classname="org.zaproxy.clientapi.ant.LoadSessionTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="NewZAPSession" classname="org.zaproxy.clientapi.ant.NewSessionTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="SaveZAPSession" classname="org.zaproxy.clientapi.ant.SaveSessionTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="SpiderURL" classname="org.zaproxy.clientapi.ant.SpiderUrlTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="stopZapTask" classname="org.zaproxy.clientapi.ant.StopZapTask" classpath="${lib}/zap-api-v2-8.jar" />
+    <taskdef name="alert" classname="org.zaproxy.clientapi.ant.AlertTask" classpath="${lib}/zap-api-v2-8.jar" />
+	
+	<path id="3rd-party-classpath">
+	    <fileset dir="${lib}">
+	        <include name="**/*.jar" />
+	    </fileset>
+	</path>
+	
+	<target name="build">
+	    <javac includeantruntime="false" srcdir="${src}" destdir="${build}">
+	    	<classpath refid="3rd-party-classpath" />
+	    </javac>
+		<javac includeantruntime="false" srcdir="${src}" destdir="${bin}">
+			    	<classpath refid="3rd-party-classpath" />
+		</javac>
+	</target>
+
+	<target name="run">
+	    <java classname="com_test.BodgeITTest">
+	      <classpath>
+	        <pathelement location="${build}" />
+	        <path refid="3rd-party-classpath" />
+	      </classpath>
+	    </java>
+	</target>
+	
+	<target name="clean">
+		<delete>
+			<fileset dir="." includes="**/*.txt" />
+			<fileset dir="." includes="**/*.log" />
+			<fileset dir="." includes="**/*.lck" />
+			<fileset dir="." includes="**/*.data" />
+	    </delete>
+	</target>
+	
+	<target name="startZap">
+        <java classname="org.zaproxy.zap.ZAP" fork="true" spawn="true" dir="${lib}">
+            <arg value="-port"/>
+            <arg value="${zapport}"/>
+            <arg value="-dir"/>
+            <arg value="${zaphome}"/>
+            <classpath>
+                    <pathelement location="${lib}/zap-api-v2-8.jar"/>
+            </classpath>
+        </java>
+	</target>
+
+    <target name="startZapDaemon">
+        <java classname="org.zaproxy.zap.ZAP" fork="true" spawn="true" dir="${lib}">
+            <arg value="-daemon"/>
+            <arg value="-port"/>
+            <arg value="${zapport}"/>
+            <arg value="-dir"/>
+            <arg value="${lib}"/>
+            <classpath>
+                    <pathelement location="${lib}/zap-api-v2-8.jar"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="stopZap">
+        <stopZapTask zapAddress="${zapaddr}" zapPort="${zapport}" debug="true"/>
+    </target>
+	
+	<target name="ZAPDemo">
+		<antcall target="build" />
+		
+		<antcall target="startZap" />
+		
+		<antcall target="startZapDaemon" />		
+		
+		<NewZAPSession zapAddress="${zapaddr}" zapPort="${zapport}" debug="true" />
+		
+		<antcall target="clean" />
+		
+		<AccessURL zapAddress="${zapaddr}" zapPort="${zapport}" url="${targetHost}" debug="true"/>
+        
+		<SpiderURL zapAddress="${zapaddr}" zapPort="${zapport}" url="${targetHost}" debug="true"/>
+		
+		<record name="Report.txt" action="start" append="true" />
+		<antcall target="run" />
+		<record name="Report.txt" action="stop" />
+		
+		<ActiveScanURL zapAddress="${zapaddr}" zapPort="${zapport}" url="${targetHost}" debug="true"/>
+		<sleep seconds="10"/>
+        
+		<ActiveScanSite zapAddress="${zapaddr}" zapPort="${zapport}" url="${targetHost}" debug="true"/>
+        
+		<tstamp>
+        	<format property="timestamp" pattern="MM-dd-yyyy HH-mm-ss"/>
+        </tstamp>
+        <SaveZAPSession zapAddress="${zapaddr}" zapPort="${zapport}" name="${user.dir}/test ${timestamp}" debug="true"/>
+		
+		<record name="Report.txt" action="start" append="true" />
+		<VulnerabilityAssessment zapAddress="${zapaddr}" zapPort="${zapport}" debug="true">
+            <ignoreAlert alert="Cookie set without HttpOnly flag" />
+            <ignoreAlert alert="X-Content-Type-Options header missing" />
+            <ignoreAlert alert="X-Frame-Options header not set" />
+			<ignoreAlert alert="Application Error disclosure" />
+            <ignoreAlert alert="Cookie set without HttpOnly flag" />
+			<ignoreAlert alert="Password Autocomplete in browser" />
+        </VulnerabilityAssessment>
+		<record name="Report.txt" action="stop" />
+        <!--<stopZapTask zapAddress="${zapaddr}" zapPort="${zapport}"/>-->
+    </target>
+
+</project>

@@ -1,0 +1,137 @@
+
+run:
+     [java] CheckCurrentURL from Home: PASS
+     [java] CheckCurrentURL from About Us: PASS
+     [java] CheckCurrentURL from Contact Us: PASS
+     [java] CheckCurrentURL from Login: PASS
+     [java] CheckCurrentURL from Your Basket: PASS
+     [java] CheckCurrentURL from Search: PASS
+     [java] CheckCurrentURL from Register: PASS
+     [java] USER CREATION: PASS
+     [java] CheckCurrentURL from Register: PASS
+     [java] REGISTRATION PAGE: PASS
+     [java] CheckCurrentURL from Logout: PASS
+     [java] LOGIN: PASS
+[VulnerabilityAssessment] Open URL: http://zap/xml/core/view/alerts/?baseurl=&start=-1&count=-1&
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: Password Autocomplete in browser, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: Cookie set without HttpOnly flag, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: Password Autocomplete in browser, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: Application Error disclosure, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: Cookie set without HttpOnly flag, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Content-Type-Options header missing, Risk: null, Reliability: null, Url: null, Param: null, Other: null
+[VulnerabilityAssessment] Ignoring alert 	Alert: X-Frame-Options header not set, Risk: null, Reliability: null, Url: null, Param: null, Other: null
